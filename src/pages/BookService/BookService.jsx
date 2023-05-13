@@ -26,7 +26,7 @@ const BookService = () => {
 
         console.log(booking);
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://car-doctor-server-umber.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -47,7 +47,7 @@ const BookService = () => {
         <div>
             <h2 className='text-center text-3xl'>Book Service:
                 {/* {title} */}
-            
+
             </h2>
             <form onSubmit={handleBookService}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
